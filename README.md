@@ -4,7 +4,7 @@
 ## STILL IN PROGRESS!
 
 ## About
-Chef quiz is a school project for my UI-technologies course in TAMK.
+Chef quiz is a school project for UI-technologies course in TAMK.
 
 The goal was to make a website by using basic frontend technologies:
 - HTML
