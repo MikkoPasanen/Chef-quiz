@@ -83,4 +83,12 @@ body {
   background-color: lightgray;
   color: #fff;
   pointer-events: none;
+}
+.quiz-container .quiz-app .correct:hover {
+  background-color: lightgreen;
+  color: black;
+}
+.quiz-container .quiz-app .incorrect:hover {
+  background-color: red;
+  color: black;
 }/*# sourceMappingURL=style.css.map */

@@ -51,7 +51,7 @@ function showQuestion() {
     });
 
     // Get the current question and display it
-    if (currentQuestionIndex < 11) {
+    if (currentQuestionIndex < questions.length) {
         let currentQuestion = shuffledQuestions[currentQuestionIndex];
         let questionNumber = currentQuestionIndex + 1;
         questionElement.innerHTML = `${questionNumber}. ${currentQuestion.question}`;

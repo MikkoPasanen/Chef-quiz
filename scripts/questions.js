@@ -212,6 +212,65 @@ const questions = [
         ],
         img: "pics/icon.webp",
     },
+    {
+        question:
+            "Which of the following is not a traditional ingredient in a Tiramisu dessert?",
+        answers: [
+            {
+                text: "Marsala wine",
+                correct: "false",
+            },
+            {
+                text: "Cocoa powder",
+                correct: "false",
+            },
+            {
+                text: "Ladyfingers",
+                correct: "false",
+            },
+            { text: "Cream cheese", correct: "true" },
+        ],
+        img: "pics/icon.webp",
+    },
+    {
+        question: 'What does the term "flambé" mean in cooking?',
+        answers: [
+            {
+                text: "To ignite alcohol and create flames briefly",
+                correct: "true",
+            },
+            {
+                text: "To marinade food",
+                correct: "false",
+            },
+            {
+                text: "To steam food over hot water",
+                correct: "false",
+            },
+            { text: "To cook food in intense heat", correct: "false" },
+        ],
+        img: "pics/icon.webp",
+    },
+       {
+        question: 'What is the term for the process of cooking by submerging food in fat or oil at a low temperature',
+        answers: [
+            {
+                text: "Frying",
+                correct: "false",
+            },
+            {
+                text: "Searing",
+                correct: "false",
+            },
+            {
+                text: "Confit",
+                correct: "true",
+            },
+            { text: "Sous vide", correct: "false" },
+        ],
+        img: "pics/icon.webp",
+    },
+
 ];
 
 export { questions };

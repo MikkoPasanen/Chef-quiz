@@ -96,5 +96,16 @@ body {
             color: #fff;
             pointer-events: none;
         }
+
+        .correct:hover {
+            background-color: lightgreen;
+            color: black
+        }
+
+        .incorrect:hover {
+            background-color: red;
+            color: black
+
+        }
     }
 }
