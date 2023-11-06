@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <title>Chef quiz</title>
+    </head>
+    <body>
+        <div class="quiz-container">
+            <div class="heading">
+                <h1>Chef quiz🍳</h1>
+                <button id="hint">💡Hints left: 2</button>
+            </div>
+            <div class="quiz-app">
+                <img
+                    id="question-image"
+                    src="pics/PintRush.webp"
+                    alt="quiz image"
+                />
+                <h2 id="question">Question goes here</h2>
+                <div id="answers-container">
+                    <button class="answer">Answer 1</button>
+                    <button class="answer">Answer 2</button>
+                    <button class="answer">Answer 3</button>
+                    <button class="answer">Answer 4</button>
+                </div>
+
+                <button id="next-question">Next question</button>
+            </div>
+        </div>
+
+        <script type="module" src="scripts/quiz.js"></script>
+    </body>
+</html>
