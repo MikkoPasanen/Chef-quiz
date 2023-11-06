@@ -1,4 +1,4 @@
-# Chef-quiz
+# Chef-quiz🍳
 <img align="right" alt="gordon" src="./pics/gordon.gif">
 
 ## STILL IN PROGRESS!
@@ -6,7 +6,7 @@
 ## About
 Chef quiz is a school project for my UI-technologies course in TAMK.
 
-The goal was to make a website by using basic frontend technologies such as:
+The goal was to make a website by using basic frontend technologies:
 - HTML
 - CSS / SASS
 - Javacript
