@@ -10,11 +10,8 @@ The goal was to make a website by using basic frontend technologies such as:
 - Javacript
 
 ## Usage
-To play weather app, simply navigate to the website hosted on GitHub Pages.
 
-You can access it by clicking on the following link:
-[Chef quiz](#) 
-
+Chef quiz will be hosted on github pages when it's ready.
 
 ## Features
 - 15 questions with 4 possible answers each
