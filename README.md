@@ -13,7 +13,13 @@ The goal was to make a website by using basic frontend technologies:
 
 ## Usage
 
-Chef quiz will be hosted on github pages when it's ready.
+Chef quiz is hosted on github pages!
+
+Play chef quiz by clicking the following link:
+[Chef quiz](https://mikkopasanen.github.io/Chef-quiz/).
+
+<b>NOTE!</b> This game is still not fully ready, problems with scaling, UI and logic are still in progress
+
 
 ## Features
 - 15 questions with 4 possible answers each
