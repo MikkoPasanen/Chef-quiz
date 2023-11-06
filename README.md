@@ -22,9 +22,9 @@ Play chef quiz by clicking the following link:
 
 
 ## Features
-- 15 questions with 4 possible answers each
-- 2 available hints that will remove 2 random wrong answers
-- Questions come in random order
+- 10 random questions out of 20 with 4 possible answers each <- TODO
+- 2 hints available that will remove 2 random wrong answers
+- Displays your personal high score which is stored in the web pages local storage <- TODO
 
 
 ## Author
