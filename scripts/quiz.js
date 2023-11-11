@@ -48,6 +48,7 @@ function showQuestion() {
         button.classList.remove("correct", "incorrect");
         button.classList.remove("hint-used");
         button.removeEventListener("click", clickHandler);
+        button.style.pointerEvents = "auto";
     });
 
     // Get the current question and display it
@@ -90,6 +91,12 @@ function checkAnswer(selectedIndex, currentQuestion) {
             }
         }
     }
+
+    // Disable all the answer buttons so they cant be clicked after the answer
+    // has been given
+    answerButtons.forEach((button) => {
+        button.style.pointerEvents = "none";
+    });
 
     // Display the next question button after the answer has been given
     nextButton.style.display = "block";
