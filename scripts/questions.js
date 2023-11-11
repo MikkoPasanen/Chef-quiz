@@ -95,7 +95,7 @@ const questions = [
             },
             { text: "Demerara sugar", correct: "true" },
         ],
-        img: "pics/sugars.webp",
+        img: "./pics/sugars.webp",
     },
     {
         question: "What gives croissants their characteristic flaky texture?",
@@ -114,7 +114,7 @@ const questions = [
             },
             { text: "Milk", correct: "false" },
         ],
-        img: "pics/croissants.webp",
+        img: "./pics/croissants.webp",
     },
     {
         question: "What is traditionally the butchers cut of beef?",
@@ -133,7 +133,7 @@ const questions = [
             },
             { text: "Loin", correct: "false" },
         ],
-        img: "pics/butchers-cut.webp",
+        img: "./pics/butchers-cut.webp",
     },
     {
         question: "How many in a bakers dozen?",
@@ -152,7 +152,7 @@ const questions = [
             },
             { text: "16", correct: "false" },
         ],
-        img: "pics/icon.webp",
+        img: "./pics/bakers-dozen.webp",
     },
     {
         question: "What chef ranks between a Sous Chef and a Commie Chef?",
@@ -171,7 +171,7 @@ const questions = [
             },
             { text: "Executive Chef", correct: "false" },
         ],
-        img: "pics/icon.webp",
+        img: "./pics/chef-de-partie.webp",
     },
     {
         question: "What kind of pasta is this?",
@@ -190,7 +190,7 @@ const questions = [
             },
             { text: "Linguine", correct: "true" },
         ],
-        img: "pics/icon.webp",
+        img: "./pics/linguine.webp",
     },
     {
         question:
@@ -210,7 +210,7 @@ const questions = [
             },
             { text: "Searing", correct: "false" },
         ],
-        img: "pics/icon.webp",
+        img: "./pics/blanching.webp",
     },
     {
         question:
@@ -230,7 +230,7 @@ const questions = [
             },
             { text: "Cream cheese", correct: "true" },
         ],
-        img: "pics/icon.webp",
+        img: "./pics/tiramisu.webp",
     },
     {
         question: 'What does the term "flambé" mean in cooking?',
@@ -249,7 +249,7 @@ const questions = [
             },
             { text: "To cook food in intense heat", correct: "false" },
         ],
-        img: "pics/icon.webp",
+        img: "./pics/flambe.webp",
     },
     {
         question:
@@ -269,7 +269,7 @@ const questions = [
             },
             { text: "Sous vide", correct: "false" },
         ],
-        img: "pics/icon.webp",
+        img: "./pics/confit.webp",
     },
     {
         question: "What is the reccomended internal temperature for chicken?",
@@ -288,7 +288,7 @@ const questions = [
             },
             { text: "65°C", correct: "false" },
         ],
-        img: "pics/icon.webp",
+        img: "./pics/chicken.webp",
     },
     {
         question: "What is a Dead plate?",
@@ -310,7 +310,7 @@ const questions = [
                 correct: "true",
             },
         ],
-        img: "pics/icon.webp",
+        img: "./pics/plating.webp",
     },
     {
         question: "In a professional kithcen, what is a family meal?",
@@ -332,7 +332,7 @@ const questions = [
                 correct: "false",
             },
         ],
-        img: "pics/icon.webp",
+        img: "./pics/family-meal.webp",
     },
     {
         question: "What is this herb called?",
@@ -354,7 +354,7 @@ const questions = [
                 correct: "false",
             },
         ],
-        img: "pics/icon.webp",
+        img: "./pics/dill.webp",
     },
     {
         question: 'In baking what does the term "proofing" refer to?',
@@ -376,7 +376,7 @@ const questions = [
                 correct: "true",
             },
         ],
-        img: "pics/icon.webp",
+        img: "./pics/proofing.webp",
     },
     {
         question: "What is the term for a pâté made from various fish or seafood?",
@@ -398,7 +398,7 @@ const questions = [
                 correct: "false",
             },
         ],
-        img: "pics/icon.webp",
+        img: "./pics/pate.webp",
     },
 ];
 
