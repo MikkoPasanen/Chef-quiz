@@ -251,8 +251,9 @@ const questions = [
         ],
         img: "pics/icon.webp",
     },
-       {
-        question: 'What is the term for the process of cooking by submerging food in fat or oil at a low temperature',
+    {
+        question:
+            "What is the term for the process of cooking by submerging food in fat or oil at a low temperature",
         answers: [
             {
                 text: "Frying",
@@ -270,7 +271,135 @@ const questions = [
         ],
         img: "pics/icon.webp",
     },
-
+    {
+        question: "What is the reccomended internal temperature for chicken?",
+        answers: [
+            {
+                text: "75°C",
+                correct: "true",
+            },
+            {
+                text: "70°C",
+                correct: "false",
+            },
+            {
+                text: "80°C",
+                correct: "false",
+            },
+            { text: "65°C", correct: "false" },
+        ],
+        img: "pics/icon.webp",
+    },
+    {
+        question: "What is a Dead plate?",
+        answers: [
+            {
+                text: "A decorative plate used for presentation",
+                correct: "false",
+            },
+            {
+                text: "A tool used to tenderize meat",
+                correct: "false",
+            },
+            {
+                text: "A type of special plate for spesific cuisines",
+                correct: "false",
+            },
+            {
+                text: "A dish that has gone bad and is inedible",
+                correct: "true",
+            },
+        ],
+        img: "pics/icon.webp",
+    },
+    {
+        question: "In a professional kithcen, what is a family meal?",
+        answers: [
+            {
+                text: "Meal made for families that come in to eat",
+                correct: "false",
+            },
+            {
+                text: "Large sized portion of a dish",
+                correct: "false",
+            },
+            {
+                text: "Where employees eat together before service",
+                correct: "true",
+            },
+            {
+                text: "Old fashioned dishes that are familiar to home cooked food",
+                correct: "false",
+            },
+        ],
+        img: "pics/icon.webp",
+    },
+    {
+        question: "What is this herb called?",
+        answers: [
+            {
+                text: "Rosemary",
+                correct: "false",
+            },
+            {
+                text: "Dill",
+                correct: "true",
+            },
+            {
+                text: "Parsley",
+                correct: "false",
+            },
+            {
+                text: "Thyme",
+                correct: "false",
+            },
+        ],
+        img: "pics/icon.webp",
+    },
+    {
+        question: 'In baking what does the term "proofing" refer to?',
+        answers: [
+            {
+                text: "Checking the temperature of the oven",
+                correct: "false",
+            },
+            {
+                text: "Adding salt to the mixture",
+                correct: "false",
+            },
+            {
+                text: "Brushing pastries with egg wash",
+                correct: "false",
+            },
+            {
+                text: "Letting dough rise",
+                correct: "true",
+            },
+        ],
+        img: "pics/icon.webp",
+    },
+    {
+        question: "What is the term for a pâté made from various fish or seafood?",
+        answers: [
+            {
+                text: "Pâté de poisson",
+                correct: "true",
+            },
+            {
+                text: "Rillettes",
+                correct: "false",
+            },
+            {
+                text: "Foie gras",
+                correct: "false",
+            },
+            {
+                text: "Terrine",
+                correct: "false",
+            },
+        ],
+        img: "pics/icon.webp",
+    },
 ];
 
 export { questions };
