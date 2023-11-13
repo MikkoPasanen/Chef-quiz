@@ -75,19 +75,36 @@ function showQuestion() {
 
         currentQuestionIndex++;
     } else {
+        // Retrieve the high score from localStorage
+        let highScore = localStorage.getItem("highScore");
+
+        if (highScore === null) {
+            // Store the score in localStorage
+            localStorage.setItem("highScore", score);
+        } else if(score > highScore) {
+            localStorage.setItem("highScore", score);
+        }
+
+        highScore = localStorage.getItem("highScore");
+
         quizGame.style.display = "none";
         resultsScreen.style.display = "block";
-        document.getElementById("score").innerHTML = `Your score was ${score}/10`;
+
+        document.getElementById("highscore").innerHTML = `🏆Your highscore: ${highScore}`;
+        document.getElementById(
+            "score"
+        ).innerHTML = `Your score was ${score}/10`;
         const skillText = document.getElementById("skill");
 
-        if(score <= 4) {
-            skillText.innerHTML = "Seems like you still have some learning to do!";
-        } else if(score >= 5 && score <= 8) {
-            skillText.innerHTML = "You seem to know your way around the kitchen!";
+        if (score <= 4) {
+            skillText.innerHTML =
+                "Seems like you still have some learning to do!";
+        } else if (score >= 5 && score <= 8) {
+            skillText.innerHTML =
+                "You seem to know your way around the kitchen!";
         } else {
             skillText.innerHTML = "Good job chef!";
         }
-
     }
 }
 

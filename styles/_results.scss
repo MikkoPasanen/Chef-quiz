@@ -6,6 +6,11 @@
     #results-header {
        @extend %heading;
        margin-bottom: 20px;
+
+       #highscore {
+        font-size: $secondary-font-size;
+        font-weight: $weight;
+       }
     }
 
     #results-body {
@@ -14,11 +19,13 @@
         #score {
             font-size: $header-font-size;
             margin-bottom: 20px;
+            font-weight: $weight;
         }
 
         #skill {
             font-size: $secondary-font-size;
             margin-bottom: 15px;
+            font-weight: $weight;
         }
 
         #play-again {
