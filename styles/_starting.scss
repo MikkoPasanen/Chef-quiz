@@ -2,14 +2,15 @@
 
 #starting-container {
     @extend %container;
+    margin: 150px auto 0;
+
 
     h2 {
         font-size: $header-font-size;
         text-align: center;
         font-weight: $weight;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         border-bottom: 1px solid black;
-
     }
 
     p {

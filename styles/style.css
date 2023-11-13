@@ -51,6 +51,9 @@
   justify-content: space-between;
 }
 
+#results-container #results-header {
+  margin-bottom: 20px;
+}
 #results-container #results-body {
   text-align: center;
 }
@@ -112,11 +115,14 @@
   justify-content: space-between;
 }
 
+#starting-container {
+  margin: 150px auto 0;
+}
 #starting-container h2 {
   font-size: 25px;
   text-align: center;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border-bottom: 1px solid black;
 }
 #starting-container p {

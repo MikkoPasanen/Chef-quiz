@@ -5,18 +5,16 @@
 
     #results-header {
        @extend %heading;
+       margin-bottom: 20px;
     }
 
     #results-body {
-
         text-align: center;
-
 
         #score {
             font-size: $header-font-size;
             margin-bottom: 20px;
         }
-
 
         #skill {
             font-size: $secondary-font-size;

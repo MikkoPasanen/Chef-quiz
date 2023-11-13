@@ -20,16 +20,21 @@ let hintsLeft = 2;
 const questionElement = document.getElementById("question");
 const nextButton = document.getElementById("next-question");
 const hintButton = document.getElementById("hint");
+const startQuizButton = document.getElementById("start-game");
 const playAgainButton = document.getElementById("play-again");
 const questionImage = document.getElementById("question-image");
 const resultsScreen = document.getElementById("results-container");
 const quizGame = document.getElementsByClassName("quiz-container")[0];
-//resultsScreen.style.display = "none";
+const startingScreen = document.getElementById("starting-container");
+
+quizGame.style.display = "none";
+resultsScreen.style.display = "none";
 
 // Apply eventlisteners for the buttons
 nextButton.addEventListener("click", showQuestion);
 hintButton.addEventListener("click", applyHint);
 playAgainButton.addEventListener("click", playAgain);
+startQuizButton.addEventListener("click", startGame);
 
 
 // Get all answer buttons and convert them into a normal array from nodelist using spread
@@ -167,6 +172,12 @@ function playAgain() {
     quizGame.style.display = "block";
     resultsScreen.style.display = "none";
 
+    showQuestion();
+}
+
+function startGame() {
+    quizGame.style.display = "block";
+    startingScreen.style.display = "none";
     showQuestion();
 }
 
