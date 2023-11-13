@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700");
 .quiz-container .heading #hint {
   font-size: 15px;
   background-color: #D2B48C;
@@ -54,12 +55,74 @@
   text-align: center;
 }
 #results-container #results-body #score {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 20px;
 }
 #results-container #results-body #skill {
-  font-size: 17px;
+  font-size: 18px;
   margin-bottom: 15px;
+}
+.quiz-container .heading #hint {
+  font-size: 15px;
+  background-color: #D2B48C;
+  color: #4E4E4E;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.quiz-container .quiz-app #next-question, #starting-container #start-game {
+  background-color: #D2B48C;
+  color: #4E4E4E;
+  font-weight: 600;
+  margin: 20px auto 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+}
+
+.quiz-container .quiz-app .answer {
+  background-color: #D2B48C;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.quiz-container .heading #hint:hover, .quiz-container .quiz-app .answer:hover, .quiz-container .quiz-app #next-question:hover, #starting-container #start-game:hover {
+  background-color: #4E4E4E;
+  color: whitesmoke;
+}
+
+.quiz-container, #starting-container {
+  background-color: #E0D3BF;
+  width: 90%;
+  max-width: 600px;
+  padding: 30px;
+  margin: 70px auto 0;
+  border-radius: 10px;
+}
+
+.quiz-container .heading {
+  border-bottom: 1px solid black;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#starting-container h2 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+#starting-container p {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
 }
 .quiz-container .heading #hint {
   font-size: 15px;
@@ -137,6 +200,7 @@ body {
   font-size: 18px;
   font-weight: 600;
   text-align: center;
+  margin-bottom: 10px;
 }
 .quiz-container .quiz-app .correct {
   background-color: forestgreen;

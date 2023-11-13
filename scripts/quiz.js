@@ -2,8 +2,9 @@
 TODO:
 
 Aloitusruutu
-Lopetusruutu
 Mobile first
+High score
+
 */
 
 import { questions } from "./questions.js";
@@ -23,7 +24,7 @@ const playAgainButton = document.getElementById("play-again");
 const questionImage = document.getElementById("question-image");
 const resultsScreen = document.getElementById("results-container");
 const quizGame = document.getElementsByClassName("quiz-container")[0];
-resultsScreen.style.display = "none";
+//resultsScreen.style.display = "none";
 
 // Apply eventlisteners for the buttons
 nextButton.addEventListener("click", showQuestion);

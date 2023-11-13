@@ -8,16 +8,18 @@
     }
 
     #results-body {
+
         text-align: center;
 
 
         #score {
-            font-size: 20px;
+            font-size: $header-font-size;
             margin-bottom: 20px;
         }
 
+
         #skill {
-            font-size: 17px;
+            font-size: $secondary-font-size;
             margin-bottom: 15px;
         }
 

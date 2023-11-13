@@ -1,0 +1,29 @@
+@import "variables";
+
+#starting-container {
+    @extend %container;
+
+    h2 {
+        font-size: $header-font-size;
+        text-align: center;
+        font-weight: $weight;
+        margin-bottom: 10px;
+        border-bottom: 1px solid black;
+
+    }
+
+    p {
+        font-size: $normal-font-size;
+        text-align: center;
+        font-weight: $weight;
+    }
+
+    #start-game {
+        @extend %next-question-button;
+    }
+
+    #start-game:hover {
+        @extend %hover;
+    }
+
+}
