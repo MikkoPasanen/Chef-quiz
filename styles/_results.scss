@@ -1,0 +1,32 @@
+@import "variables";
+
+#results-container {
+    @extend %container;
+
+    #results-header {
+       @extend %heading;
+    }
+
+    #results-body {
+        text-align: center;
+
+
+        #score {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        #skill {
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+
+        #play-again {
+            @extend %next-question-button;
+        }
+
+        #play-again:hover {
+            @extend %hover;
+        }
+    }
+}

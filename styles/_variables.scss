@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700");
+
+$header-font-size: 25px;
+$secondary-font-size: 18px;
+$normal-font-size: 15px;
+
+$base-font: "Montserrat";
+$weight: 600;
+
+$primary-color: #AAA69A;
+$secondary-color: #E0D3BF;
+$button-color: #D2B48C;
+$font-color: #4E4E4E;
+
+
+%hint-button {
+    font-size: $normal-font-size;
+    background-color: $button-color;
+    color: $font-color;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: $weight;
+}
+
+%next-question-button {
+    background-color: $button-color;
+    color: $font-color;
+    font-weight: $weight;
+    margin: 20px auto 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+}
+
+%answer-button {
+    background-color: $button-color;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: $weight;
+}
+
+%hover {
+    background-color: $font-color;
+    color: whitesmoke;
+}
+
+%container {
+    background-color: $secondary-color;
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    margin: 70px auto 0;
+    border-radius: 10px;
+}
+
+%heading {
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}

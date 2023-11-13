@@ -1,14 +1,9 @@
 /*
 TODO:
 
-Värimaailma
-Kaikkiin kysymyksiin kuvat
-Lisää 4 kysymystä
 Aloitusruutu
 Lopetusruutu
 Mobile first
-Lajittele scss tiedostot paremmin
-Lajittele js tiedostot paremmin
 */
 
 import { questions } from "./questions.js";
@@ -24,11 +19,17 @@ let hintsLeft = 2;
 const questionElement = document.getElementById("question");
 const nextButton = document.getElementById("next-question");
 const hintButton = document.getElementById("hint");
+const playAgainButton = document.getElementById("play-again");
 const questionImage = document.getElementById("question-image");
+const resultsScreen = document.getElementById("results-container");
+const quizGame = document.getElementsByClassName("quiz-container")[0];
+resultsScreen.style.display = "none";
 
 // Apply eventlisteners for the buttons
 nextButton.addEventListener("click", showQuestion);
 hintButton.addEventListener("click", applyHint);
+playAgainButton.addEventListener("click", playAgain);
+
 
 // Get all answer buttons and convert them into a normal array from nodelist using spread
 let answerButtonsNode = document.querySelectorAll(".answer");
@@ -68,8 +69,19 @@ function showQuestion() {
 
         currentQuestionIndex++;
     } else {
-        // All questions have been asked
-        questionElement.innerHTML = "All questions have been asked!";
+        quizGame.style.display = "none";
+        resultsScreen.style.display = "block";
+        document.getElementById("score").innerHTML = `Your score was ${score}/10`;
+        const skillText = document.getElementById("skill");
+
+        if(score <= 4) {
+            skillText.innerHTML = "Seems like you still have some learning to do!";
+        } else if(score >= 5 && score <= 8) {
+            skillText.innerHTML = "You seem to know your way around the kitchen!";
+        } else {
+            skillText.innerHTML = "Good job chef!";
+        }
+
     }
 }
 
@@ -132,6 +144,7 @@ function applyHint() {
             let removeAnswerIndex = answersToRemove[i];
 
             answerButtons[removeAnswerIndex].classList.add("hint-used");
+            answerButtons[removeAnswerIndex].style.pointerEvents = "none";
         }
 
         hintsUsed++;
@@ -140,6 +153,20 @@ function applyHint() {
         // Display the current status of the hints
         hintButton.innerHTML = `💡Hints left: ${hintsLeft}`;
     }
+}
+
+function playAgain() {
+    score = 0;
+    hintsLeft = 2;
+    hintsUsed = 0;
+    currentQuestionIndex = 0;
+    hintButton.innerHTML = `💡Hints left: ${hintsLeft}`;
+
+
+    quizGame.style.display = "block";
+    resultsScreen.style.display = "none";
+
+    showQuestion();
 }
 
 // Own function for the answer clicking so that evenlisteners work as they should
