@@ -132,9 +132,14 @@
   border-bottom: 1px solid black;
 }
 #starting-container p {
-  font-size: 15px;
+  font-size: 10px;
   text-align: center;
   font-weight: 600;
+}
+@media only screen and (min-width: 600px) {
+  #starting-container p {
+    font-size: 15px;
+  }
 }
 .quiz-container .heading #hint {
   font-size: 15px;

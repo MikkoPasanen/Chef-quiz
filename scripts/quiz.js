@@ -1,9 +1,3 @@
-/*
-TODO:
-
-Mobile first
-
-*/
 
 import { questions } from "./questions.js";
 import { shuffleArray } from "./shuffle.js";
