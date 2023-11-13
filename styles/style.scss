@@ -38,6 +38,7 @@ body {
 
         img {
             width: 100%;
+            height: auto;
             margin-bottom: 30px;
         }
 
@@ -75,6 +76,14 @@ body {
         .hint-used {
             background-color: lightgray;
             color: $font-color;
+        }
+
+        .correct:hover {
+            background-color: forestgreen;
+        }
+
+        .incorrect:hover {
+            background-color: red;
         }
     }
 }

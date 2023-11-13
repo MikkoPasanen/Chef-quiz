@@ -1,9 +1,7 @@
 /*
 TODO:
 
-Aloitusruutu
 Mobile first
-High score
 
 */
 
@@ -60,16 +58,20 @@ function showQuestion() {
 
     // Get the current question and display it
     if (currentQuestionIndex < questions.length / 2) {
+
         let currentQuestion = shuffledQuestions[currentQuestionIndex];
         let questionNumber = currentQuestionIndex + 1;
         questionElement.innerHTML = `${questionNumber}. ${currentQuestion.question}`;
+
+        // Randomize the current questions answers so they arent always the same
+        currentQuestion.shuffledAnswers = shuffleArray(currentQuestion.answers);
 
         // Change the questions image based on the question
         questionImage.src = currentQuestion.img;
 
         // Display all the possible answers and add eventlistener to each button
         for (let i = 0; i < 4; i++) {
-            answerButtons[i].innerHTML = currentQuestion.answers[i].text;
+            answerButtons[i].innerHTML = currentQuestion.shuffledAnswers[i].text;
             answerButtons[i].addEventListener("click", clickHandler);
         }
 
@@ -109,8 +111,17 @@ function showQuestion() {
 }
 
 function checkAnswer(selectedIndex, currentQuestion) {
+
+    // Get the selected answer's text
+    const selectedAnswerText = answerButtons[selectedIndex].innerHTML;
+
+    // Find the correct answer among the shuffled answers
+    const correctAnswer = currentQuestion.answers.find(
+        (answer) => answer.correct === "true"
+    );
+
     // If the answer is correct
-    if (currentQuestion.answers[selectedIndex].correct === "true") {
+    if (selectedAnswerText === correctAnswer.text) {
         score++;
         answerButtons[selectedIndex].classList.add("correct");
 
@@ -120,7 +131,7 @@ function checkAnswer(selectedIndex, currentQuestion) {
 
         // Display the correct answer if the chosen answer was wrong
         for (let i = 0; i < 4; i++) {
-            if (currentQuestion.answers[i].correct === "true") {
+            if (answerButtons[i].innerHTML === correctAnswer.text) {
                 answerButtons[i].classList.add("correct");
                 break;
             }
@@ -148,15 +159,12 @@ function applyHint() {
         //  While arrays length is less than 2, generate random index
         while (answersToRemove.length < 2) {
             const randomIndex = Math.floor(
-                Math.random() * currentQuestion.answers.length
+                Math.random() * currentQuestion.shuffledAnswers.length
             );
-
-            // Get random answer from the current question
-            const randomAnswer = currentQuestion.answers[randomIndex];
 
             // If the answer is not in the array yet and it is incorrect answer, then store it
             if (!answersToRemove.includes(randomIndex)) {
-                if (randomAnswer.correct === "false") {
+                if (currentQuestion.shuffledAnswers[randomIndex].correct === "false") {
                     answersToRemove.push(randomIndex);
                 }
             }
