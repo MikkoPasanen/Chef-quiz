@@ -34,7 +34,7 @@ let answerButtonsNode = document.querySelectorAll(".answer");
 let answerButtons = [...answerButtonsNode];
 
 // Create a shuffled copy of the questions array
-let shuffledQuestions = shuffleArray(questions);
+let shuffledQuestions;
 
 //-----------------------------------------------------------//
 
@@ -87,9 +87,7 @@ function showQuestion() {
         resultsScreen.style.display = "block";
 
         document.getElementById("highscore").innerHTML = `🏆Your highscore: ${highScore}`;
-        document.getElementById(
-            "score"
-        ).innerHTML = `Your score was ${score}/10`;
+        document.getElementById("score").innerHTML = `Your score was ${score}/10`;
         const skillText = document.getElementById("skill");
 
         if (score <= 4) {
@@ -190,13 +188,14 @@ function playAgain() {
 
     quizGame.style.display = "block";
     resultsScreen.style.display = "none";
-
+    shuffledQuestions = shuffleArray(questions);
     showQuestion();
 }
 
 function startGame() {
     quizGame.style.display = "block";
     startingScreen.style.display = "none";
+    shuffledQuestions = shuffleArray(questions);
     showQuestion();
 }
 
