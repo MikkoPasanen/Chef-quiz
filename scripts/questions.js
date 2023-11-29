@@ -79,7 +79,7 @@ const questions = [
     },
     {
         question:
-            "Which type of sugar is oftern used for making a glossy caramel topping on desserts?",
+            "Which type of sugar is often used for making a glossy caramel topping on desserts?",
         answers: [
             {
                 text: "Granulated sugar",
@@ -136,7 +136,7 @@ const questions = [
         img: "./pics/butchers-cut.webp",
     },
     {
-        question: "How many in a bakers dozen?",
+        question: "How many are there in a bakers dozen?",
         answers: [
             {
                 text: "12",
@@ -253,7 +253,7 @@ const questions = [
     },
     {
         question:
-            "What is the term for the process of cooking by submerging food in fat or oil at a low temperature",
+            "What is the term for the process of cooking by submerging food in its own fat or oil at a low temperature",
         answers: [
             {
                 text: "Frying",
@@ -313,7 +313,7 @@ const questions = [
         img: "./pics/plating.webp",
     },
     {
-        question: "In a professional kithcen, what is a family meal?",
+        question: "In a professional kitchen, what is a family meal?",
         answers: [
             {
                 text: "Meal made for families that come in to eat",
@@ -379,7 +379,8 @@ const questions = [
         img: "./pics/proofing.webp",
     },
     {
-        question: "What is the term for a pâté made from various fish or seafood?",
+        question:
+            "What is the term for a pâté made from various fish or seafood?",
         answers: [
             {
                 text: "Pâté de poisson",
