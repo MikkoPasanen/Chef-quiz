@@ -3,16 +3,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700");
 .quiz-container .heading #hint {
   font-size: 12px;
-  background-color: #D2B48C;
-  color: #4E4E4E;
+  background-color: #d2b48c;
+  color: #4e4e4e;
   padding: 5px;
   border-radius: 5px;
   font-weight: 600;
 }
 
 .quiz-container .quiz-app #next-question, #results-container #results-body #play-again {
-  background-color: #D2B48C;
-  color: #4E4E4E;
+  background-color: #d2b48c;
+  color: #4e4e4e;
   font-weight: 600;
   margin: 20px auto 0;
   padding: 10px;
@@ -21,7 +21,7 @@
 }
 
 .quiz-container .quiz-app .answer {
-  background-color: #D2B48C;
+  background-color: #d2b48c;
   width: 100%;
   margin: 10px 0;
   padding: 10px;
@@ -30,7 +30,7 @@
 }
 
 .quiz-container .heading #hint:hover, .quiz-container .quiz-app .answer:hover, .quiz-container .quiz-app #next-question:hover, #results-container #results-body #play-again:hover {
-  background-color: #4E4E4E;
+  background-color: #4e4e4e;
   color: whitesmoke;
 }
 
@@ -43,8 +43,7 @@
 }
 
 .quiz-container, #results-container {
-  background-color: #E0D3BF;
-  width: 90%;
+  background-color: #e0d3bf;
   max-width: 400px;
   padding: 20px;
   margin: 30px auto 30px;
@@ -54,31 +53,28 @@
 @media only screen and (min-width: 767px) and (max-width: 1199px) {
   /* Mobile styles */
   .quiz-container, #results-container {
-    background-color: #E0D3BF;
-    width: 90%;
-    max-width: 500px;
+    background-color: #e0d3bf;
+    max-width: 400px;
     padding: 20px;
-    margin: 30px auto 30px;
+    margin: 20px auto 20px;
     border-radius: 10px;
   }
 }
 @media only screen and (min-width: 1200px) {
   /* Desktop styles */
   .quiz-container, #results-container {
-    background-color: #E0D3BF;
-    width: 90%;
-    max-width: 550px;
-    padding: 25px;
-    margin: 30px auto 30px;
+    background-color: #e0d3bf;
+    max-width: 450px;
+    padding: 15px;
+    margin: 10px auto 20px;
     border-radius: 10px;
   }
 }
 @media only screen and (min-width: 1600px) {
   /* Desktop styles */
   .quiz-container, #results-container {
-    background-color: #E0D3BF;
-    width: 90%;
-    max-width: 650px;
+    background-color: #e0d3bf;
+    max-width: 550px;
     padding: 25px;
     margin: 40px auto 40px;
     border-radius: 10px;
@@ -106,16 +102,16 @@
 }
 .quiz-container .heading #hint {
   font-size: 12px;
-  background-color: #D2B48C;
-  color: #4E4E4E;
+  background-color: #d2b48c;
+  color: #4e4e4e;
   padding: 5px;
   border-radius: 5px;
   font-weight: 600;
 }
 
 .quiz-container .quiz-app #next-question, #starting-container #start-game {
-  background-color: #D2B48C;
-  color: #4E4E4E;
+  background-color: #d2b48c;
+  color: #4e4e4e;
   font-weight: 600;
   margin: 20px auto 0;
   padding: 10px;
@@ -124,7 +120,7 @@
 }
 
 .quiz-container .quiz-app .answer {
-  background-color: #D2B48C;
+  background-color: #d2b48c;
   width: 100%;
   margin: 10px 0;
   padding: 10px;
@@ -133,7 +129,7 @@
 }
 
 .quiz-container .heading #hint:hover, .quiz-container .quiz-app .answer:hover, .quiz-container .quiz-app #next-question:hover, #starting-container #start-game:hover {
-  background-color: #4E4E4E;
+  background-color: #4e4e4e;
   color: whitesmoke;
 }
 
@@ -146,8 +142,7 @@
 }
 
 .quiz-container, #starting-container {
-  background-color: #E0D3BF;
-  width: 90%;
+  background-color: #e0d3bf;
   max-width: 400px;
   padding: 20px;
   margin: 30px auto 30px;
@@ -157,31 +152,28 @@
 @media only screen and (min-width: 767px) and (max-width: 1199px) {
   /* Mobile styles */
   .quiz-container, #starting-container {
-    background-color: #E0D3BF;
-    width: 90%;
-    max-width: 500px;
+    background-color: #e0d3bf;
+    max-width: 400px;
     padding: 20px;
-    margin: 30px auto 30px;
+    margin: 20px auto 20px;
     border-radius: 10px;
   }
 }
 @media only screen and (min-width: 1200px) {
   /* Desktop styles */
   .quiz-container, #starting-container {
-    background-color: #E0D3BF;
-    width: 90%;
-    max-width: 550px;
-    padding: 25px;
-    margin: 30px auto 30px;
+    background-color: #e0d3bf;
+    max-width: 450px;
+    padding: 15px;
+    margin: 10px auto 20px;
     border-radius: 10px;
   }
 }
 @media only screen and (min-width: 1600px) {
   /* Desktop styles */
   .quiz-container, #starting-container {
-    background-color: #E0D3BF;
-    width: 90%;
-    max-width: 650px;
+    background-color: #e0d3bf;
+    max-width: 550px;
     padding: 25px;
     margin: 40px auto 40px;
     border-radius: 10px;
@@ -209,16 +201,16 @@
 }
 .quiz-container .heading #hint {
   font-size: 12px;
-  background-color: #D2B48C;
-  color: #4E4E4E;
+  background-color: #d2b48c;
+  color: #4e4e4e;
   padding: 5px;
   border-radius: 5px;
   font-weight: 600;
 }
 
 .quiz-container .quiz-app #next-question {
-  background-color: #D2B48C;
-  color: #4E4E4E;
+  background-color: #d2b48c;
+  color: #4e4e4e;
   font-weight: 600;
   margin: 20px auto 0;
   padding: 10px;
@@ -227,7 +219,7 @@
 }
 
 .quiz-container .quiz-app .answer {
-  background-color: #D2B48C;
+  background-color: #d2b48c;
   width: 100%;
   margin: 10px 0;
   padding: 10px;
@@ -236,7 +228,7 @@
 }
 
 .quiz-container .quiz-app #next-question:hover, .quiz-container .quiz-app .answer:hover, .quiz-container .heading #hint:hover {
-  background-color: #4E4E4E;
+  background-color: #4e4e4e;
   color: whitesmoke;
 }
 
@@ -249,8 +241,7 @@
 }
 
 .quiz-container {
-  background-color: #E0D3BF;
-  width: 90%;
+  background-color: #e0d3bf;
   max-width: 400px;
   padding: 20px;
   margin: 30px auto 30px;
@@ -260,31 +251,28 @@
 @media only screen and (min-width: 767px) and (max-width: 1199px) {
   /* Mobile styles */
   .quiz-container {
-    background-color: #E0D3BF;
-    width: 90%;
-    max-width: 500px;
+    background-color: #e0d3bf;
+    max-width: 400px;
     padding: 20px;
-    margin: 30px auto 30px;
+    margin: 20px auto 20px;
     border-radius: 10px;
   }
 }
 @media only screen and (min-width: 1200px) {
   /* Desktop styles */
   .quiz-container {
-    background-color: #E0D3BF;
-    width: 90%;
-    max-width: 550px;
-    padding: 25px;
-    margin: 30px auto 30px;
+    background-color: #e0d3bf;
+    max-width: 450px;
+    padding: 15px;
+    margin: 10px auto 20px;
     border-radius: 10px;
   }
 }
 @media only screen and (min-width: 1600px) {
   /* Desktop styles */
   .quiz-container {
-    background-color: #E0D3BF;
-    width: 90%;
-    max-width: 650px;
+    background-color: #e0d3bf;
+    max-width: 550px;
     padding: 25px;
     margin: 40px auto 40px;
     border-radius: 10px;
@@ -327,7 +315,7 @@ body {
 }
 .quiz-container .quiz-app .hint-used {
   background-color: lightgray;
-  color: #4E4E4E;
+  color: #4e4e4e;
 }
 .quiz-container .quiz-app .correct:hover {
   background-color: forestgreen;

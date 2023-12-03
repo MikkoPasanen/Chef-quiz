@@ -50,7 +50,7 @@ body {
         }
 
         .answer {
-          @extend %answer-button;
+            @extend %answer-button;
         }
 
         .answer:hover {
