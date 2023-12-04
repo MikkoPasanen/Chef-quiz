@@ -2,15 +2,16 @@
 
 #results-container {
     @extend %container;
+    margin: 150px auto 0;
 
     #results-header {
-       @extend %heading;
-       margin-bottom: 20px;
+        @extend %heading;
+        margin-bottom: 20px;
 
-       #highscore {
-        font-size: $secondary-font-size;
-        font-weight: $weight;
-       }
+        #highscore {
+            font-size: $secondary-font-size;
+            font-weight: $weight;
+        }
     }
 
     #results-body {

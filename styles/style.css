@@ -80,6 +80,9 @@
     border-radius: 10px;
   }
 }
+#results-container {
+  margin: 150px auto 0;
+}
 #results-container #results-header {
   margin-bottom: 20px;
 }
